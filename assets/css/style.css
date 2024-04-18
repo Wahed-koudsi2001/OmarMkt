@@ -1459,10 +1459,17 @@ textarea.input-field {
 .footer-top .social-link {
   background-color: #fff;
   color: hsl(335, 87%, 53%);
-  ;
   font-size: 18px;
-  padding: 8px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-top .social-link:is(:hover, :focus) {

@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nums = document.querySelectorAll(".nums");
 
   const options = {
-    threshold: .5
+    threshold: .1
   };
 
   const observer = new IntersectionObserver(function (entries) {
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
           let count = 0;
           const countInterval = setInterval(() => {
             if (count < targetNumber) {
-              count += Math.ceil(targetNumber / 150);
+              count += Math.ceil(targetNumber / 220);
               num.textContent = "+" + count;
             } else {
               num.textContent = "+" + targetNumber;
