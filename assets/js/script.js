@@ -118,3 +118,31 @@ document.addEventListener("DOMContentLoaded", function () {
     console.error("Element not found.");
   }
 });
+
+// Get all card texts
+const cardTexts = document.querySelectorAll('.card-text');
+cardTexts.forEach(cardText => {
+  if (cardText.textContent.length > 25) {
+
+    cardText.innerHTML = cardText.textContent.slice(0, 90) + '... <a class="read-more">اقراء المزيد</a>';
+  }
+
+  const readMoreLink = cardText.querySelector('.read-more');
+  if (readMoreLink) {
+    readMoreLink.addEventListener('click', () => {
+      const modal = document.getElementById('myModal');
+      const modalText = document.getElementById('modal-text');
+      modalText.textContent = cardText.dataset.fullText || cardText.textContent;
+      modal.style.display = 'block';
+      const closeButton = document.querySelector('.modal .close');
+      closeButton.onclick = function () {
+        modal.style.display = 'none';
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = 'none';
+        }
+      };
+    });
+  }
+});
