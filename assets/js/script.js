@@ -164,3 +164,5 @@ $('.menu li').click(function () {
   $('.menu li.active').removeClass('active');
   $(this).addClass('active');
 });
+
+AOS.init();
