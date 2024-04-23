@@ -280,7 +280,8 @@ button[type="submit"] {
 }
 
 .nav-toggle-btn {
-  font-size: 40px;
+  font-size: 30px;
+  color: #831751;
 }
 
 .nav-toggle-btn.active .open,
@@ -1039,7 +1040,7 @@ textarea.input-field {
     height: 2px;
     background-image: var(--gradient);
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin: right;
     transition: var(--transition-2);
   }
 
@@ -1334,7 +1335,6 @@ textarea.input-field {
   color: var(--white-1);
   border-radius: 50%;
   box-shadow: var(--shadow-2);
-  z-index: 4;
   opacity: 1;
   transition: var(--transition-1);
   -webkit-transition: var(--transition-1);
@@ -1608,9 +1608,9 @@ textarea.input-field {
 }
 
 .close {
-  color: #aaaaaa;
+  color: #831751;
   float: right;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
 }
 

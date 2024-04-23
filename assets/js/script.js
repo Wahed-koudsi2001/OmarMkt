@@ -124,7 +124,7 @@ const cardTexts = document.querySelectorAll('.card-text');
 cardTexts.forEach(cardText => {
   if (cardText.textContent.length > 25) {
 
-    cardText.innerHTML = cardText.textContent.slice(0, 90) + '... <a class="read-more">اقراء المزيد</a>';
+    cardText.innerHTML = cardText.textContent.slice(0, 90) + '... <span class="read-more">اقراء المزيد</span>';
   }
 
   const readMoreLink = cardText.querySelector('.read-more');
