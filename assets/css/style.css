@@ -1659,3 +1659,63 @@ ul li.active {
     font-size: 16px;
   }
 }
+
+
+.testimonial {
+  padding: 100px 0;
+}
+
+.testimonial .section-title {
+  margin-bottom: 40px;
+}
+
+.testimonial .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.testimonial .row .col {
+  box-shadow: 0 5px 20px 1px hsla(220, 63%, 33%, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.testimonial .row .col .google-5-star {
+  width: 100px;
+}
+
+.testimonial .row .col p {
+  margin: 15px 0 20px;
+}
+
+.testimonial .row .col .google-reviews-icon {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.testimonial .row .col .name {
+  font-weight: bold;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .testimonial .row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
