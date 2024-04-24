@@ -148,21 +148,26 @@ cardTexts.forEach(cardText => {
 });
 
 
-$('.items-wrapper').isotope({
-  itemSelector: '.item',
-  filter: "*"
-});
-
-$('.menu li').click(function () {
-  var selector = $(this).attr('data-filter');
-
-  $('.items-wrapper').isotope({
-    filter: selector,
-  })
-
-  //changing active class with click event
-  $('.menu li.active').removeClass('active');
-  $(this).addClass('active');
-});
 
 AOS.init();
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    250: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2
+    },
+    991: {
+      slidesPerView: 3
+    }
+  }
+});
