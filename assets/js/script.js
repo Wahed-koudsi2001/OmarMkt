@@ -152,7 +152,7 @@ cardTexts.forEach(cardText => {
 AOS.init();
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 5,
   spaceBetween: 30,
   loop: true,
   autoplay: {
@@ -161,13 +161,13 @@ var swiper = new Swiper(".mySwiper", {
   },
   breakpoints: {
     250: {
-      slidesPerView: 1
-    },
-    768: {
       slidesPerView: 2
     },
+    768: {
+      slidesPerView: 4
+    },
     991: {
-      slidesPerView: 3
+      slidesPerView: 7
     }
   }
 });
