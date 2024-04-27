@@ -12,9 +12,11 @@
 }
 
 .policy ul li {
-    margin: 30px 0;
-    font-weight: bold;
+    margin-bottom: 25px;
 }
-.policy ul li span{
-    font-size: 18px;
+
+.policy ul li p,
+.policy ul li span {
+    font-weight: bold;
+    font-size: 17px;
 }
