@@ -907,6 +907,12 @@ textarea.input-field {
 
 }
 
+.service-card .card-text,
+.modal-content p {
+  font-weight: 500;
+  color: #000;
+}
+
 /**
  * responsive for larger than 992px screen
  */
