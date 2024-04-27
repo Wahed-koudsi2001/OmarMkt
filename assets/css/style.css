@@ -716,6 +716,8 @@ textarea.input-field {
 .contact-card :is(.card-link, .card-address) {
   font-size: var(--fs-6);
   transition: var(--transition-1);
+  color: #000;
+  font-weight: bold;
 }
 
 .contact-card .card-link:is(:hover, :focus) {
