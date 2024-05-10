@@ -68,7 +68,7 @@ document.getElementById('form')
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         btn.value = 'Send Email';
-        window.location.href = "https://omarmkt.com/thankyou.html"
+        window.location.href = "../../thankyou.html"
       }, (err) => {
         btn.value = 'Send Email';
         alert(JSON.stringify(err));
