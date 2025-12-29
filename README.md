@@ -1,3 +1,1 @@
 # OmarMkt
-
-https://omarmkt.com/
